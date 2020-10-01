@@ -18,6 +18,13 @@
                     </li>
                 {%- endfor -%}
             </ul>
+            <ul class="nav">
+                {%- for member in metadata.team -%}
+                    <li class="nav-item">
+                        <p>{{ member }}</p>
+                    </li>
+                {%- endfor -%}
+            </ul>
         </header>
 
         <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
