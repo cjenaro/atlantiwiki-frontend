@@ -1,0 +1,20 @@
+{
+  "name": "atlantiwiki-frontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/jenaro94/atlantiwiki-frontend.git",
+  "author": "Jenaro Calvino <jen.calvineo@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx eleventy",
+    "watch": "npx eleventy --serve",
+    "dev": "yarn watch",
+    "now-build": "yarn build",
+    "debug": "DEBUG=* npx eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.11.0",
+    "@sanity/client": "^1.150.7",
+    "groq": "^1.150.1"
+  }
+}
